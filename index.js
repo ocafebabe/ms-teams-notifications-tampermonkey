@@ -2,7 +2,7 @@
 // @name         Microsoft Teams Notifications
 // @namespace    http://tampermonkey.net/
 // @version      1.1
-// @description  Creates browser notifications for the Web-based Teams application. Useful in Linux (in Linux notifications do not work). Tested in Chrome 66.
+// @description  Creates browser notifications for the Web-based Teams application. Useful in Linux (in Linux notifications do not work). Tested in Chrome 69.
 // @author       David López Castellote
 // @match        https://teams.microsoft.com/*
 // @grant        none
@@ -13,7 +13,7 @@
     function notifyMe(numberOfMessages) {
         // Let's check if the browser supports notifications
         if (!("Notification" in window)) {
-            alert("Este navegador no soporta notificaciones de escritorio.");
+            alert("This browser does not support desktop notifications.");
         }
 
         // Let's check whether notification permissions have already been granted
@@ -37,7 +37,7 @@
     function createNotification(numberOfMessages) {
         var title = "Teams Online";
         var options = {
-            body: "Tienes " + numberOfMessages + " nuevas notificaciones.",
+            body: "You have " + numberOfMessages + " new notifications.",
             icon: document.querySelector('link[rel="icon"]').href,
             requireInteraction: true
         };
@@ -49,7 +49,7 @@
 
 
     function setTitleObserver() {
-        console.log('Activando notificaciones de Teams...');
+        console.log('Activating Teams notifications...');
         requestNotificationsPermission();
         var target = document.querySelector('head > title');
         var observer = new window.WebKitMutationObserver(function(mutations) {
@@ -78,7 +78,7 @@
 
     function requestNotificationsPermission() {
         Notification.requestPermission().then(function(result) {
-            console.log('Permiso para notificaciones de Teams: ' + result);
+            console.log('Permission for Teams notifications: ' + result);
         });
     }
 
