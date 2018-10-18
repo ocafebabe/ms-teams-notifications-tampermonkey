@@ -7,7 +7,7 @@ Tested and working:
 ## Installation
 
 1. Install Chrome's [Tampermonkey extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en).
-2. Install [Greasy Fork installation script](https://greasyfork.org/en/scripts/48399-microsoft-teams-notifications)
+2. Install [Greasy Fork installation script](https://greasyfork.org/en/scripts/373405-microsoft-teams-notifications)
 3. Reload https://teams.microsoft.com/
 4. **Enable** browser notifications
 
