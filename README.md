@@ -11,7 +11,7 @@ Tested and working:
 3. Reload https://teams.microsoft.com/
 4. **Enable** browser notifications
 
-![Teams notification](https://raw.githubusercontent.com/ocafebabe/ms-teams-notifications-tampermonkey/master/teams-notification.png)
+![Teams notifications](https://raw.githubusercontent.com/ocafebabe/ms-teams-notifications-tampermonkey/master/teams-notifications.png)
 
 ## How does it work
 
