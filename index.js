@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Microsoft Teams Notifications
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Creates browser notifications for the Web-based Teams application. Useful in Linux (in Linux notifications do not work). Tested in Chrome 69.
 // @author       David López Castellote
 // @match        https://teams.microsoft.com/*
@@ -35,7 +35,7 @@
     }
 
     function createNotification(numberOfMessages) {
-        var title = "Teams Online";
+        var title = "Microsoft Teams";
         var options = {
             body: "You have " + numberOfMessages + " new notifications.",
             icon: document.querySelector('link[rel="icon"]').href,
